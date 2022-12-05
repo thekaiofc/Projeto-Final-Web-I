@@ -1,0 +1,66 @@
+body{
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+.cabecalho{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho img{
+    position: relative;
+    height: 80%;
+    width: auto;
+    cursor: pointer;
+}
+
+.cabecalho b{
+    font-size: 20pt;
+    color: #334b58;
+    text-shadow:1px 1px 5px white, 1px 1px 5px white, 1px 1px 5px white, 1px 1px 5px white, 1px 1px 5px white, 1px 1px 5px white;
+}
+
+h1{
+    padding-left: 20px;
+    color: #81a7be;
+    text-shadow: 1px 1px black;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.container div{
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.container b{
+    margin-top: 25px;
+    font-size: 14pt;
+}
+
+.container img{
+    position: relative;
+    border-radius: 10%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.container img:hover{
+    transform: scale(1.2);
+}

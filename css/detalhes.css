@@ -1,0 +1,119 @@
+body{
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 0;
+    color: #223c4d
+}
+.cabecalho{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho img{
+    position: relative;
+    height: 80%;
+    width: auto;
+    cursor: pointer;
+}
+
+.cabecalho b{
+    font-size: 20pt;
+    color: #334b58;
+    text-shadow:1px 1px 5px white, 1px 1px 5px white, 1px 1px 5px white, 1px 1px 5px white, 1px 1px 5px white, 1px 1px 5px white;
+}
+
+.venda{
+    width: 850px;
+    border: double 3px  #81a7be;
+    border-radius: 30px;
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.venda img:first-child{
+    border-radius: 10%;
+    border: 5px solid #334b58;
+}
+
+.imagem {
+    padding: 10px;
+    position: relative;
+    display:flex
+    
+
+}
+.anuncio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    color: #6898b6;
+    text-shadow: 1px 1px #000000;
+    font-weight:bolder;   
+}
+h4, h1{
+    padding-left: 0px;
+}
+
+h3{
+    text-align: center;
+}
+
+.envio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   
+}
+
+.botao{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.botao input[type=button]{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12pt;
+    transition: 0.2s;
+    margin-right: 20px;
+}
+
+.botao input[type=button]:hover{
+    color: white;
+    background-color: #81a7be;
+    font-weight: bolder;
+}
+
+.outros{
+    display: flex;
+    justify-content: center;
+}
+
+.outros img{
+    width: 100px;
+    margin: auto 10px;
+    transition: 0.2s;
+    border-radius: 10%;
+    /* cursor: pointer; */
+}
+
+.outros img:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>La Belle Plage</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="cabecalho">
+            
+            <img src="img/logo.png">
+            <b>Os melhores modelos de jóias artesanais você encontra aqui</b>
+            
+        </div>
+
+        <div class="div_botoes">
+            <a href="categorias1.html"><input type="button" name="biju" value="Brincos"></a>
+            <a href="categorias2.html"><input type="button" name="biju" value="Pulseiras"></a>
+            <a href="categorias3.html"><input type="button" name="biju" value="Colares"></a>
+        </div>
+
+        <div class="div_banner">
+            <img id="banner" src="img/banners/banner1.jpg" onclick="trocar_banner()">
+        </div>
+    </body>
+
+    <script>
+        var banners=['banner1','banner2','banner3']
+        var x = 0;
+
+        function trocar_banner(){
+
+            document.getElementById('banner').style.opacity = 0;
+
+            if(x==2){
+                x=0;
+            } else{
+                x++;
+            }
+
+            setTimeout(() => {
+                document.getElementById('banner').src = 'img/banners/'+banners[x]+'.jpg';
+                document.getElementById('banner').style.opacity = 1;
+            }, 200);
+        }
+    </script>
+
+</html>
